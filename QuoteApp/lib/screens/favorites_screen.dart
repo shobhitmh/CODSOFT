@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:flutter_gradient_app_bar/flutter_gradient_app_bar.dart';
 import 'package:provider/provider.dart';
 import '../providers/quotes_provider.dart';

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gradient_app_bar/flutter_gradient_app_bar.dart';
 import 'package:provider/provider.dart';
 import 'package:quoteapp/screens/favorites_screen.dart';
 import 'package:share_plus/share_plus.dart'; // Import the share_plus package
@@ -120,6 +119,7 @@ class HomeScreen extends StatelessWidget {
           FloatingActionButton(
             child: Icon(Icons.refresh),
             onPressed: () {
+              // ignore: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member
               quotesProvider.notifyListeners(); // Refresh the UI
             },
             heroTag: 'refreshButton', // Unique tag for the refresh button
